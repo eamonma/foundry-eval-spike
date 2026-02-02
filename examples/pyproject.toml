@@ -1,0 +1,24 @@
+[project]
+name = "eval-examples"
+version = "0.1.0"
+description = "Azure AI Foundry evaluation examples"
+requires-python = ">=3.10"
+dependencies = [
+    "azure-ai-projects",
+    "azure-identity",
+    "openai",
+    "python-dotenv",
+]
+
+[tool.setuptools]
+packages = [
+    "shared",
+    "builtin_eval",
+    "custom_code_eval",
+    "custom_llm_eval",
+    "agent_builtin_eval",
+    "foundry_agent_eval",
+    "foundry_agent_eval.evaluators",
+    "foundry_agent_eval.tools",
+    "mcp_cloud_eval",
+]
